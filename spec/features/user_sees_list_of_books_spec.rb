@@ -1,10 +1,10 @@
 require "rails_helper"
 
 feature "when visiting the index page" do
-  let!(:book_1) { FactoryGirl.create(:book) }
-  let!(:book_2) { FactoryGirl.create(:book) }
-  let!(:book_3) { FactoryGirl.create(:book) }
-  let!(:book_4) { FactoryGirl.create(:book) }
+  let!(:book_1) { FactoryBot.create(:book) }
+  let!(:book_2) { FactoryBot.create(:book) }
+  let!(:book_3) { FactoryBot.create(:book) }
+  let!(:book_4) { FactoryBot.create(:book) }
 
   scenario "user sees a list of books" do
     visit '/'
