@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature "when adding a new book" do
-  # let!(:name_of_the_wind) { FactoryBot.create(:book) }
+  let!(:name_of_the_wind) { FactoryBot.create(:book) }
 
   scenario "adds a review successfully" do
 
