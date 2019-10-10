@@ -1,24 +1,12 @@
-# README
+# Good Reads Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It turns out that we really love books. So much so that we want to catalogue which books are our favorite, and allow our friends to provide reviews on our very own website. 
 
-Things you may want to cover:
+# Setup 
+```
+bundle exec rake db:create
+bundle exec rake db:migrate
+bundle exec rake db:seed
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a test driven assignment, so let the tests guide you. Make sure to read each test before running the test file in order to get a sense of what is expected of you. 
