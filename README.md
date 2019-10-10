@@ -10,3 +10,5 @@ bundle exec rake db:seed
 ```
 
 This is a test driven assignment, so let the tests guide you. Make sure to read each test before running the test file in order to get a sense of what is expected of you. 
+
+For the sake of time, this app priorities viewing books on a show page, and then adding reviews. However, you are encouraged to add your own book form to the app so that users can add new books!
