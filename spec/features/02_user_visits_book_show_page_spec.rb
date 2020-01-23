@@ -3,6 +3,7 @@ require "rails_helper"
 feature "when visiting the show page for a book" do
   let!(:name_of_the_wind) { Book.create(title: "Name of the Wind", author: "Patrick Rothfuss", isbn: "5555555555555") }
   let(:other_book) { FactoryBot.create(:book) }
+  
   let!(:name_of_the_wind_review) { FactoryBot.create(:review, book: name_of_the_wind) }
   let!(:other_review) { FactoryBot.create(:review, book: other_book) }
 
