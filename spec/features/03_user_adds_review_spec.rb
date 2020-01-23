@@ -10,7 +10,7 @@ feature "when adding a new book" do
 
     expect(page).to have_content "Review form for #{name_of_the_wind.title}"
 
-    fill_in "Rating", with: 3
+    fill_in "Rating", with: 5
     fill_in "Review", with: "This book is hella awesome"
     click_button "Add Review"
 
