@@ -10,7 +10,7 @@ feature "when adding a new book" do
 
     expect(page).to have_content "Review form for #{name_of_the_wind.title}"
 
-    fill_in "Rating", with: 3
+    fill_in "Rating", with: 5
     fill_in "Review", with: "This book is hella awesome"
     click_button "Add Review"
 
@@ -24,6 +24,6 @@ feature "when adding a new book" do
     click_link 'Add a Review'
     click_button 'Add Review'
 
-    expect(page).to have_content "Rating can't be blank, Body can't be blank"
+    expect(page).to have_content "Rating can't be blank and Body can't be blank"
   end
 end
