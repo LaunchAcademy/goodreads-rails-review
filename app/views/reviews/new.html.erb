@@ -1,1 +1,18 @@
+<%= @errors %> 
+
 <h1>Review form for <%= @book.title %></h1>
+
+<%= form_for([@book, @review]) do |f| %>
+  <div>
+    <%= f.label :rating %>
+    <%= f.text_field :rating %>
+  </div>
+
+  <div>
+    <%= f.label :body, "Review" %>
+    <%= f.text_field :body %>
+  </div>
+
+  <%= f.submit "Add Review" %>
+
+<% end %>

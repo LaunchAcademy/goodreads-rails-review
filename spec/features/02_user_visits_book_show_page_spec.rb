@@ -5,6 +5,7 @@ feature "when visiting the show page for a book" do
 
   scenario "user clicks the link to a book and sees book details" do
     visit '/'
+    # save_and_open_page
     click_link 'Name of the Wind'
     expect(page).to have_content(name_of_the_wind.title)
     expect(page).to have_content(name_of_the_wind.author)

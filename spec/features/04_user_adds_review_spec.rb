@@ -13,7 +13,7 @@ feature "when adding a new book" do
     fill_in "Rating", with: 5
     fill_in "Review", with: "This book is hella awesome"
     click_button "Add Review"
-
+# save_and_open_page
     expect(page).to have_content name_of_the_wind.title
     expect(page).to have_content 5
     expect(page).to have_content "This book is hella awesome"
