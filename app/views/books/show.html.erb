@@ -1,1 +1,15 @@
+<h1> Title: <%= @book.title %> </h1>
+<h2> Author: <%= @book.author %> </h2>
+<p> ISBN: <%= @book.isbn %> </p>
 
+
+<% @book.reviews.each do |review| %>
+    <li>
+        Review Rating: <%= review.rating%>
+        <br>
+        What they said: <%= review.body %>
+    </li>
+
+<% end%>
+
+<%= link_to 'Add a Review', new_book_review_path(@book) %>

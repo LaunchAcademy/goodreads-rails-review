@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-feature "when adding a new book" do
+feature "when adding a new review" do
   let!(:name_of_the_wind) { FactoryBot.create(:book) }
 
-  scenario "adds a review successfully" do
+  scenario "the review is added successfully if all attributes are provided" do
 
     visit book_path(name_of_the_wind)
     click_link 'Add a Review'
