@@ -6,6 +6,7 @@ feature "when visiting the index page" do
   let!(:the_expanse) { Book.create(title: "Leviathan's Wake", author: "James S. A. Corey", isbn: "5555535555555") }
 
   scenario "user sees a list of books" do
+
     visit '/'
 
     expect(page).to have_content(book_1.title)

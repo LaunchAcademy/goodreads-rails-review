@@ -7,6 +7,7 @@ feature "when visiting the show page for a book" do
     
     visit '/'
     click_link 'Name of the Wind'
+
     expect(page).to have_content(name_of_the_wind.title)
     expect(page).to have_content(name_of_the_wind.author)
     expect(page).to have_content(name_of_the_wind.isbn)

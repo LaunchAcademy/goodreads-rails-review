@@ -1,13 +1,16 @@
 class BooksController < ApplicationController
 
-  def index
-    @books = Book.all
+    def index 
 
-  end
+        @books = Book.all
+        # render /books/index.html.erb
+    end
 
-  def show
-    @book = Book.find(params[:id])
-    # @reviews = @book.reviews 
-  end
+    def show 
+        @book = Book.find(params[:id])
+        @reviews = @book.reviews
+    end
+
+
 
 end

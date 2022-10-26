@@ -3,13 +3,12 @@
 <p> ISBN: <%= @book.isbn %> </p>
 
 
-<% @book.reviews.each do |review| %>
+<% @reviews.each do |review| %>
+
     <li>
-        Review Rating: <%= review.rating%>
-        <br>
-        What they said: <%= review.body %>
+        Rating: <%= review.rating %> | What they said: <%= review.body %>
     </li>
 
-<% end%>
+<% end %>
 
 <%= link_to 'Add a Review', new_book_review_path(@book) %>
